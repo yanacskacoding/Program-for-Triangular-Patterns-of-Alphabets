@@ -1,0 +1,171 @@
+//code 1
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, j, n = 5;
+    for (i = 1; i <= n; i++)
+    {
+        for (j = i; j <= n; j++)
+        {
+            cout << (char)('A' - 1 + j) << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+//Output 1:
+
+A B C D E 
+B C D E
+C D E
+D E
+E
+
+
+
+//code 2
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, j, n = 5;
+    for (i = n; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+            cout << (char)('A' - 1 + i) << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+//Output 2:
+
+E E E E E
+D D D D
+C C C
+B B
+A
+
+
+
+//code 3
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, j, n = 5;
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            cout << (char)('A' + j - 1) << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+//Output 3:
+
+A
+A B
+A B C
+A B C D 
+A B C D E
+
+
+
+//code 4
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, j, n = 5;
+    for (i = n; i >= 1; i--) {
+        for (j = i; j <= n; j++) {
+            cout << (char)('A' + j - 1) << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+//Output 4:
+ 
+E
+D E
+C D E
+B C D E
+A B C D E
+
+
+
+//code 5
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, j, n = 5;
+    for (i = 1; i <= n; i++) {
+        for (j = n; j >= i; j--) {
+            cout <<(char)('A' - 1 + i)<<" ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+//Output 5:
+
+A A A A A
+B B B B
+C C C 
+D D 
+E
+
+
+
+//code 6 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, j, n = 5;
+    
+    for (i = 1; i <= n; i++)
+    {
+        for (j = i; j >= 1; j--)
+        {
+            cout << (char)('A' + j - 1) << "";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+//Output 6:
+
+A 
+B A
+C B A
+D C B A
+E D C B A
